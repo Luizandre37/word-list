@@ -1,4 +1,4 @@
-export type Words = {
+export type Word = {
 name: string;
 url: string;
 

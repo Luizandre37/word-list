@@ -2,17 +2,17 @@ import { async } from '@firebase/util';
 import{ useState,useEffect} from 'react';
 import * as C from './App.styles'
 import * as Words from './services/words'
-import {}from './types/word';
+import { Word } from './types/word';
 
 const App = () => {
   const[loading, setloading] = useState(false)
-  const[words,setwords]= useState([])
+  const[word,setword]= useState<Word[]>([])
 
   useEffect(()=> {
 
     const getwords = async ()=>{
        setloading(true);
-        let words = await Words.getAll()
+       setword (await Words.getAll())
        setloading(false)
 
 
@@ -27,6 +27,14 @@ const App = () => {
       </C.Header>
       <C.Body>
  {/* area de gerar palavras*/}
+
+ {loading &&
+ <C.ScreenWarning>
+ <div className="emoji"> </div>
+ <div className="sss">carregando</div>
+
+ </C.ScreenWarning>
+}
 
   {/* area de inserção de palavras*/}
 

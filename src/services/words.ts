@@ -1,10 +1,10 @@
-import{Words} from '../types/word'
+import{Word} from '../types/word'
 import { storage } from '../libs/firebase';
 import {ref, listAll, getDownloadURL} from  'firebase/storage'
 
 export const  getAll = async () => {
 
-    let list: Words[]=[];
+    let list: Word[]=[];
 
     const BaselistFolder = ref(storage, "BaseWord");
     const wordList = await listAll(BaselistFolder)

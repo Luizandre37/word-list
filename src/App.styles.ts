@@ -25,5 +25,17 @@ import styled from "styled-components";
     margin-bottom:50px;
  `;
 
+ export const ScreenWarning = styled.div`
+   text-align: center;
+   .emoji{
+      font-size:50px
+      margin-bottom:20;
+
+   }
+ 
+ 
+ 
+ `;
+
 
 
