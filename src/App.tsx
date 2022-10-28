@@ -3,22 +3,18 @@ import * as C from './App.styles'
 const App = () => {
   return (
     <C.Container>
-      <C.Hedear>
-        <C.HeaderText>
-          Word List
-        </C.HeaderText>
-      </C.Hedear>
+      <C.Header>
+      <C.HeaderText>Word-List</C.HeaderText>
+      </C.Header>
       <C.Body>
-        .....
-        {/* Area informação */}
-        {/* Area irsesao */}
-        {/* Tabela */}
+ {/* area de gerar palavras*/}
 
+  {/* area de inserção de palavras*/}
 
+   {/* area de informação geral*/}
       </C.Body>
+ 
     </C.Container>
-
-
 
   )
 
