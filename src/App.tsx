@@ -1,6 +1,25 @@
+import { async } from '@firebase/util';
+import{ useState,useEffect} from 'react';
 import * as C from './App.styles'
+import * as Words from './services/words'
+import {}from './types/word';
 
 const App = () => {
+  const[loading, setloading] = useState(false)
+  const[words,setwords]= useState([])
+
+  useEffect(()=> {
+
+    const getwords = async ()=>{
+       setloading(true);
+        let words = await Words.getAll()
+       setloading(false)
+
+
+    }
+ getwords()
+
+  },[])
   return (
     <C.Container>
       <C.Header>
