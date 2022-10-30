@@ -41,8 +41,14 @@ const[word, setword]= useState([])
     </C.Header>
     <C.Container>
       <C.PlayerBox>
-        <C.Player></C.Player>
-        <C.H1>< SlControlPlay/><C.Input><input type="range"/></C.Input></C.H1>
+        <C.Player>
+
+          
+
+
+        </C.Player>
+      
+        <C.H1>< SlControlPlay/></C.H1>
         
         
 
@@ -53,6 +59,7 @@ const[word, setword]= useState([])
         </C.Row>
       </C.PlayerBox>
       <C.WordBox>
+   
         <C.Row>
           <C.Button>Word</C.Button>
           <C.Button>History</C.Button>

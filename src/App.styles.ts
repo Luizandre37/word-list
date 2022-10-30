@@ -107,9 +107,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Input = styled.div`
 
-`;
 
 
 export const WordBoxList = styled.div`
